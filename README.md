@@ -1,6 +1,6 @@
 # Search Glossary
 
-Search glossary is a simple implementation of an autocomplete and search functionaly specifically tailored for data containing specialized terms with their meanings such as a glossary. 
+Search glossary is a simple implementation of an autocomplete and search functionality specifically tailored for data containing specialized terms with their meanings such as a glossary. 
 You can see the working example here: http://glossary.utfrpgbg.com/
 
 ## Features
