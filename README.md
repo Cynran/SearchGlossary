@@ -26,6 +26,18 @@ For testing:
 - Mockito
 - JUnit
 
+## Docker
+
+Pull image and create docker container with:
+```
+docker run --name searchglossary -p 8088:8080 -d cynran/searchglossary:h2-1.0.0
+```
+
+After container started, reach application at:
+```
+http://localhost:8088/
+```
+
 ## Getting Started
 
 You should be able to run the application right away, however if you want it to use a different database you will have to change some things described in the next section.
@@ -59,8 +71,13 @@ In Eclipse:
 2. hover over to Run as...
 3. choose Maven install
 
-It is configured to create a WAR file for you once successfully run, so it should be easy to deploy it somewhere. 
-I used [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_Java.html) for my project.
+It is configured to create a WAR file for you once successfully run, so it should be easy to deploy it somewhere.
+
+## Creating your own docker image (optional)
+Using the dockerfile in the repository you can create a docker image easily.
+```
+docker build -t searchglossary:latest .
+```
 
 ## Contributing
 Feel free to contribute. Pull requests are welcome. 
